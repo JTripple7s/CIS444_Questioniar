@@ -26,6 +26,8 @@ h1{
 }
 
 .choice {
+  position: relative;
+  display: inline-block;
   border: 3px solid transparent;
   cursor: pointer;
   transition: 0.2s;
@@ -75,4 +77,18 @@ h1{
 .button-reset:hover {
   background-color: #0d47a1;
   transform: scale(1.05);
+}
+
+.choice.selected::after {
+  opacity: 1;
+}
+
+.choice::after {
+  content: "✅";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 28px;
+  opacity: 0;
+  transition: 0.2s;
 }
