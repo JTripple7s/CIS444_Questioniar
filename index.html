@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>BuzzFeed Style Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1 class="unifrakturcook-bold title">Which Hogwarts House are you?</h1>
+
+  <div class="quiz-container">
+      <!-- Question 1 -->
+    <section class="question">
+      <h2>Pick a Food:</h2>
+      <div class="choice-grid">
+        <div class="choice" data-choice-id="gryffindor">
+          <img src="images/apple.jpg" />
+        </div>
+        <div class="choice" data-choice-id="slytherin">
+          <img src="images/cooked_snake.jpg" />
+        </div>
+        <div class="choice" data-choice-id="hufflepuff">
+          <img src="images/puff.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 2 -->
+    <section class="question">
+      <h2>Pick a pet:</h2>
+      <div class="choice-grid">
+        <div class="choice" data-choice-id="gryffindor">
+          <img src="images/lion.jpg" />
+        </div>
+        <div class="choice" data-choice-id="slytherin">
+          <img src="images/snake.jpg" />
+        </div>
+        <div class="choice" data-choice-id="hufflepuff">
+          <img src="images/bager.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 3 -->
+    <section class="question">
+      <h2>What's Important to You:</h2>
+      <div class="choice-grid">
+        <div class="choice" data-choice-id="gryffindor">
+          <img src="images/money.jpg" />
+        </div>
+        <div class="choice" data-choice-id="slytherin">
+          <img src="images/power.jpg" />
+        </div>
+        <div class="choice" data-choice-id="hufflepuff">
+          <img src="images/sleep.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <button class= "button-reset" onclick="location.reload()">Restart Quiz</button>
+    </div>
+
+
+  <!-- Result Box -->
+  <div id="result-box" style="display: none;">
+    <h2 id="winner"></h2>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
